@@ -40,7 +40,7 @@ public class String1
      */
     public String helloName(String name) {
         
-        return "Hello"+ name + "!";          
+        return "Hello "+ name + "!";          
         
         
     }
@@ -53,7 +53,7 @@ public class String1
      * makeAbba("What", "Up") â†’ "WhatUpUpWhat"
      */
     public String makeAbba(String a, String b) {
-        return unimplemented;
+        return a + b + b + a; 
     }
 
     /*
