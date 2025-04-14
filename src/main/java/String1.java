@@ -208,9 +208,11 @@ public class String1
      if (str.length() < 3) {
          return false; 
      }
+        //Use .equals()
         if (str.length() >= 3 &&  str.substring(0,3) == ("bad")){
          return true;
      }  
+        //Use .equals()
      if(str.length() >= 4 && str.substring (1,4) == ("bad")){
          return true; 
      }
@@ -226,6 +228,7 @@ public class String1
      * conCat("abc", "") → "abc"
      */
     public String conCat(String a, String b) {
+        //what if b is empty?
         if (a.length() > 0 && b.length() > 0 && a.charAt(a.length()-1) ==b.charAt(0)) {
             return a + b.substring(1); 
     }
@@ -288,6 +291,7 @@ public class String1
      * deFront("away") → "aay"
      */
     public String deFront(String str) {    
+        //Use .equals()
         if (str.substring(0,2) == ("ab")) { 
             return str;
     }if (str.substring (0,1) == ("a")) { 
